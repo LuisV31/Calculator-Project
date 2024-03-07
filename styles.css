@@ -1,0 +1,41 @@
+.calculator {
+    width: 200px; /* Adjust based on your preference */
+    margin: auto; /* Center the calculator */
+    border: 1px solid #000; /* Basic border for the calculator */
+}
+
+#calculatorDisplay {
+    height: 50px; /* Adjust based on your preference */
+    background: #e0e0e0; /* Light grey background for the display */
+    display: flex;
+    justify-content: flex-end; /* Align numbers to the right */
+    align-items: center;
+    padding-right: 10px; /* Padding on the right of the display */
+    font-size: 20px; /* Larger font size for visibility */
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Four buttons per row */
+    gap: 5px; /* Spacing between buttons */
+}
+
+.button, .equal-button {
+    background: #f0f0f0; /* Light background for buttons */
+    border: none; /* Remove default button border */
+    height: 40px; /* Button height */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.button:active, .equal-button:active {
+    background: #ccc; /* Change background when button is pressed */
+}
+
+.operator-button {
+    background-color: rgb(13, 135, 205);
+    color: white;
+}
+
+.number-button {
+    background-color: #ac10d4;
+}
